@@ -43,7 +43,7 @@ class Sim:
         situation = []
 
         for slave in self.__slaves:
-            
+            slave.get_processed_situation()
 
-    def process_situation(self):
+    def get_processed_situation(self):
         pass

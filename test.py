@@ -22,7 +22,7 @@ class Sim:
         self.force_attack = force_attack
         self.max_force_attack = max_force_attack
 
-W, H = 600, 600
+W, H = 100, 100
 
 screen = pygame.display.set_mode((W, H))
 
@@ -33,7 +33,7 @@ GREEN = (0, 255, 0)
 
 screen.fill(WHITE)
 
-count = 10
+count = 50
 sims = []
 for i in range(count):
     max_force_ = numpy.random.normal(50, 5)
@@ -46,7 +46,7 @@ for i in range(count):
                     numpy.random.randint(0, 100) / 100 * max_force_,
                     max_force_))
 
-size = 20
+size = 5
 
 limits_x = [-1, 0] # мин, макс
 limits_y = [-1, 0] # мин, макс
