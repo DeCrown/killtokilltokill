@@ -31,7 +31,7 @@ GREEN = (0, 255, 0)
 
 screen.fill(WHITE)
 
-count = 10000
+count = 100
 sims = []
 for i in range(count):
     sims.append(Sim(numpy.random.randint(10, W - 10),
